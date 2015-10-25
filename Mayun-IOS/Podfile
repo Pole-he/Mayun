@@ -1,0 +1,12 @@
+platform :ios, '8.0'
+target "Mayun" do
+    pod 'pop', '~> 1.0'
+    pod 'SDWebImage', '~>3.7'
+    pod 'ZYQAssetPickerController',  '~> 1.0.0'
+    pod 'MBProgressHUD', '~> 0.9.1'
+    pod 'UITextView+Placeholder'
+    pod 'JDStatusBarNotification'
+    pod 'SVProgressHUD'
+    pod 'IQKeyboardManager'
+    pod "AFNetworking", "~> 2.0"
+end

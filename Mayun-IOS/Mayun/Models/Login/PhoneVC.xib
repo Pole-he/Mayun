@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneVC">
+            <connections>
+                <outlet property="cancelBtn" destination="Nau-vj-gK5" id="45S-5z-wgA"/>
+                <outlet property="codeBtn" destination="WKp-KC-vuV" id="D5O-Er-5aC"/>
+                <outlet property="codeTF" destination="vkU-Xc-r8a" id="sWb-2z-Tfi"/>
+                <outlet property="goBtn" destination="M5m-MA-IiQ" id="Tvy-uT-8eL"/>
+                <outlet property="phoneTF" destination="Kvg-sV-2pt" id="eZh-cR-1Gm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="299" height="256"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="register_view_bg" translatesAutoresizingMaskIntoConstraints="NO" id="gDq-kU-4QT">
+                    <rect key="frame" x="12" y="13" width="275" height="231"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_phone_bg" translatesAutoresizingMaskIntoConstraints="NO" id="h9s-C1-Lah">
+                    <rect key="frame" x="39" y="51" width="221" height="34"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="register_code_bg" translatesAutoresizingMaskIntoConstraints="NO" id="lt6-LQ-Ypz">
+                    <rect key="frame" x="39" y="102" width="132" height="34"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="register_get_code" translatesAutoresizingMaskIntoConstraints="NO" id="9r9-Nm-tq1">
+                    <rect key="frame" x="168" y="102" width="92" height="34"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vkU-Xc-r8a">
+                    <rect key="frame" x="54" y="111" width="108" height="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKp-KC-vuV">
+                    <rect key="frame" x="168" y="103" width="92" height="33"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
+                    <state key="normal" title="Get Code">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="getCode:" destination="-1" eventType="touchUpInside" id="Wn3-lo-rjC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5m-MA-IiQ">
+                    <rect key="frame" x="39" y="165" width="221" height="34"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
+                    <state key="normal" title="GO" backgroundImage="register_go_bg">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goAction:" destination="-1" eventType="touchUpInside" id="OC8-4v-z2y"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_phone_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ROF-vD-Q3O">
+                    <rect key="frame" x="52" y="60" width="11" height="15"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kvg-sV-2pt">
+                    <rect key="frame" x="73" y="59" width="187" height="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nau-vj-gK5">
+                    <rect key="frame" x="273" y="0.0" width="26" height="26"/>
+                    <state key="normal" image="register_cancel_btn"/>
+                    <connections>
+                        <action selector="dimiss:" destination="-1" eventType="touchUpInside" id="lnq-Ef-T89"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WKp-KC-vuV" firstAttribute="trailing" secondItem="9r9-Nm-tq1" secondAttribute="trailing" id="2Z9-iK-SyV"/>
+                <constraint firstItem="h9s-C1-Lah" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="51" id="7RS-8T-kkx"/>
+                <constraint firstItem="9r9-Nm-tq1" firstAttribute="trailing" secondItem="h9s-C1-Lah" secondAttribute="trailing" id="8B6-lW-mX4"/>
+                <constraint firstItem="h9s-C1-Lah" firstAttribute="top" secondItem="ROF-vD-Q3O" secondAttribute="bottom" constant="-24" id="8cB-on-v5o"/>
+                <constraint firstItem="vkU-Xc-r8a" firstAttribute="leading" secondItem="lt6-LQ-Ypz" secondAttribute="leading" constant="15" id="D3q-rj-5c9"/>
+                <constraint firstItem="Nau-vj-gK5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Gwq-Uq-JPE"/>
+                <constraint firstItem="Kvg-sV-2pt" firstAttribute="trailing" secondItem="h9s-C1-Lah" secondAttribute="trailing" id="MUn-0o-fns"/>
+                <constraint firstItem="9r9-Nm-tq1" firstAttribute="centerY" secondItem="lt6-LQ-Ypz" secondAttribute="centerY" id="PJH-NZ-Pab"/>
+                <constraint firstItem="M5m-MA-IiQ" firstAttribute="top" secondItem="lt6-LQ-Ypz" secondAttribute="bottom" constant="29" id="PKK-tP-BcI"/>
+                <constraint firstItem="M5m-MA-IiQ" firstAttribute="trailing" secondItem="h9s-C1-Lah" secondAttribute="trailing" id="Qf0-Km-9jI"/>
+                <constraint firstItem="Kvg-sV-2pt" firstAttribute="leading" secondItem="ROF-vD-Q3O" secondAttribute="trailing" constant="10" id="Sn2-fq-ttL"/>
+                <constraint firstItem="ROF-vD-Q3O" firstAttribute="leading" secondItem="h9s-C1-Lah" secondAttribute="leading" constant="13" id="TNw-yR-1nX"/>
+                <constraint firstItem="lt6-LQ-Ypz" firstAttribute="leading" secondItem="h9s-C1-Lah" secondAttribute="leading" id="U8C-mR-b2C"/>
+                <constraint firstItem="h9s-C1-Lah" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VZ6-MA-qGO"/>
+                <constraint firstItem="gDq-kU-4QT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WbH-8A-bMq"/>
+                <constraint firstItem="vkU-Xc-r8a" firstAttribute="trailing" secondItem="lt6-LQ-Ypz" secondAttribute="trailing" constant="-9" id="aOo-FP-VYn"/>
+                <constraint firstItem="Kvg-sV-2pt" firstAttribute="centerY" secondItem="ROF-vD-Q3O" secondAttribute="centerY" id="c3F-zg-IhQ"/>
+                <constraint firstItem="9r9-Nm-tq1" firstAttribute="leading" secondItem="lt6-LQ-Ypz" secondAttribute="trailing" constant="-3" id="hAw-00-Del"/>
+                <constraint firstItem="M5m-MA-IiQ" firstAttribute="leading" secondItem="h9s-C1-Lah" secondAttribute="leading" id="kXW-QC-bvT"/>
+                <constraint firstItem="gDq-kU-4QT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="rqn-9s-Juo"/>
+                <constraint firstItem="WKp-KC-vuV" firstAttribute="centerY" secondItem="9r9-Nm-tq1" secondAttribute="centerY" id="uIU-b4-eiu"/>
+                <constraint firstAttribute="trailing" secondItem="Nau-vj-gK5" secondAttribute="trailing" id="uy8-xM-a1P"/>
+                <constraint firstItem="lt6-LQ-Ypz" firstAttribute="top" secondItem="h9s-C1-Lah" secondAttribute="bottom" constant="17" id="vbj-9E-5d9"/>
+                <constraint firstItem="WKp-KC-vuV" firstAttribute="leading" secondItem="9r9-Nm-tq1" secondAttribute="leading" id="wwm-GQ-djI"/>
+                <constraint firstItem="vkU-Xc-r8a" firstAttribute="centerY" secondItem="lt6-LQ-Ypz" secondAttribute="centerY" id="zr0-YU-Eq4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="332.5" y="140"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="register_cancel_btn" width="26" height="26"/>
+        <image name="register_code_bg" width="132" height="34"/>
+        <image name="register_get_code" width="92" height="34"/>
+        <image name="register_go_bg" width="221" height="34"/>
+        <image name="register_phone_bg" width="221" height="34"/>
+        <image name="register_phone_icon" width="11" height="15"/>
+        <image name="register_view_bg" width="275" height="231"/>
+    </resources>
+</document>

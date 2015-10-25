@@ -1,0 +1,43 @@
+//
+//  Mayun.pch
+//  Mayun
+//
+//  Created by Nathan_he on 15/10/24.
+//  Copyright (c) 2015年 Nathan_he. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "ToolClass.h"
+#import <BmobSDK/Bmob.h>
+#import <BmobSDK/BmobProFile.h>
+#import "BaseRequest.h"
+#endif
+
+#define BunddleImage(imageName)  [UIImage imageNamed:imageName];
+
+#define IOS7OrLater ([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0 ? YES : NO)
+
+#define ViewYOffSet ([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0 ? 20.0 : 0.0)
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define UIColorFromRGB(rgbValue, _alpha) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:_alpha]
+
+#define CGColorFromRGB(rgbValue, _alpha) [[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:_alpha] CGColor]
+
+#define ScreenBounds [[UIScreen mainScreen] bounds]
+#define ScreenWidth  [[UIScreen mainScreen] bounds].size.width
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+#define Line_Width ScreenWidth>1024?0.5:1
+
+
+

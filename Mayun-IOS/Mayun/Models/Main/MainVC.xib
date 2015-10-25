@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC">
+            <connections>
+                <outlet property="faceIV" destination="djo-6F-idD" id="YdJ-gV-9ZE"/>
+                <outlet property="moreBtn" destination="xDn-er-j2y" id="2xo-nR-tXc"/>
+                <outlet property="nickName" destination="sbm-5y-c5I" id="JKH-qP-44s"/>
+                <outlet property="sendBtn" destination="GJr-eq-UcM" id="hnN-dz-d1M"/>
+                <outlet property="takeBtn" destination="2l9-QQ-gFn" id="Q2D-Cj-Pmm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="axh-En-CFf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="home_face_bg" translatesAutoresizingMaskIntoConstraints="NO" id="CuM-DT-5eY">
+                    <rect key="frame" x="120" y="66" width="80" height="81"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="djo-6F-idD">
+                    <rect key="frame" x="125" y="71" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="luy-Pk-yUH"/>
+                        <constraint firstAttribute="height" constant="70" id="nDn-qr-2dq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbm-5y-c5I">
+                    <rect key="frame" x="139" y="150" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.41176470588235292" green="0.68627450980392157" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="home_middle_bg" translatesAutoresizingMaskIntoConstraints="NO" id="VKM-NU-brd">
+                    <rect key="frame" x="0.0" y="219" width="320" height="131"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l9-QQ-gFn" userLabel="take">
+                    <rect key="frame" x="206" y="250" width="69" height="69"/>
+                    <state key="normal" image="home_take_icon"/>
+                    <connections>
+                        <action selector="clickTakeBtn:" destination="-1" eventType="touchUpInside" id="6jA-sH-uDd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDn-er-j2y">
+                    <rect key="frame" x="130" y="389" width="60" height="22"/>
+                    <state key="normal" image="home_more_icon"/>
+                    <connections>
+                        <action selector="clickMoreBtn:" destination="-1" eventType="touchUpInside" id="gon-Uu-0dx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJr-eq-UcM" userLabel="send">
+                    <rect key="frame" x="46" y="250" width="69" height="69"/>
+                    <state key="normal" image="home_send_icon"/>
+                    <connections>
+                        <action selector="clickSendBtn:" destination="-1" eventType="touchUpInside" id="CMr-Ns-vfW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VKM-NU-brd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3Ld-X7-79H"/>
+                <constraint firstItem="VKM-NU-brd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5JI-L0-L74"/>
+                <constraint firstItem="2l9-QQ-gFn" firstAttribute="centerY" secondItem="VKM-NU-brd" secondAttribute="centerY" id="5ic-86-6FN"/>
+                <constraint firstItem="GJr-eq-UcM" firstAttribute="centerY" secondItem="VKM-NU-brd" secondAttribute="centerY" id="BMB-hd-ZU6"/>
+                <constraint firstAttribute="trailing" secondItem="VKM-NU-brd" secondAttribute="trailing" id="KuE-qB-KDS"/>
+                <constraint firstItem="axh-En-CFf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="O2s-3N-BVN"/>
+                <constraint firstAttribute="trailing" secondItem="axh-En-CFf" secondAttribute="trailing" id="QDk-BY-1fx"/>
+                <constraint firstItem="djo-6F-idD" firstAttribute="leading" secondItem="CuM-DT-5eY" secondAttribute="trailing" constant="-75" id="TVa-xS-Cjh"/>
+                <constraint firstItem="VKM-NU-brd" firstAttribute="top" secondItem="sbm-5y-c5I" secondAttribute="bottom" constant="48" id="Y81-YE-SAM"/>
+                <constraint firstItem="CuM-DT-5eY" firstAttribute="centerX" secondItem="sbm-5y-c5I" secondAttribute="centerX" id="ZDI-6z-ZHx"/>
+                <constraint firstItem="sbm-5y-c5I" firstAttribute="top" secondItem="CuM-DT-5eY" secondAttribute="bottom" constant="3" id="eXN-iB-G9Q"/>
+                <constraint firstItem="CuM-DT-5eY" firstAttribute="top" secondItem="djo-6F-idD" secondAttribute="bottom" constant="-75" id="erG-yl-QRX"/>
+                <constraint firstItem="GJr-eq-UcM" firstAttribute="centerX" secondItem="VKM-NU-brd" secondAttribute="centerX" constant="-80" id="iNE-4u-qRG"/>
+                <constraint firstItem="VKM-NU-brd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="iuH-XD-NtS"/>
+                <constraint firstAttribute="bottom" secondItem="axh-En-CFf" secondAttribute="bottom" id="k2J-I9-PDW"/>
+                <constraint firstItem="xDn-er-j2y" firstAttribute="top" secondItem="VKM-NU-brd" secondAttribute="bottom" constant="39" id="p22-No-cmN"/>
+                <constraint firstItem="xDn-er-j2y" firstAttribute="centerX" secondItem="VKM-NU-brd" secondAttribute="centerX" id="reG-64-zfy"/>
+                <constraint firstItem="2l9-QQ-gFn" firstAttribute="centerX" secondItem="VKM-NU-brd" secondAttribute="centerX" constant="80" id="rxm-c2-Srk"/>
+                <constraint firstItem="sbm-5y-c5I" firstAttribute="centerX" secondItem="VKM-NU-brd" secondAttribute="centerX" id="xCM-8L-wN6"/>
+                <constraint firstItem="axh-En-CFf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xaI-qV-Dnw"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_bg" width="319" height="568"/>
+        <image name="home_face_bg" width="80" height="81"/>
+        <image name="home_middle_bg" width="319" height="131"/>
+        <image name="home_more_icon" width="60" height="21"/>
+        <image name="home_send_icon" width="69" height="69"/>
+        <image name="home_take_icon" width="69" height="69"/>
+    </resources>
+</document>
